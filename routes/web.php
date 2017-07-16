@@ -30,3 +30,5 @@ Route::get('/runtime',function(){
 	$time = config('app.timezone');
 	return $time;
 });
+
+Route::get('controller','TestController@index');
