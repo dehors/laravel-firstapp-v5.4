@@ -32,3 +32,6 @@ Route::get('/runtime',function(){
 });
 
 Route::get('controller','TestController@index');
+Route::get('controllerresource','TestResourcesController@index');
+Route::get('controllerresource/{name}/{subject?}','TestResourcesController@show');
+Route::resource('task','TestResourcesController');
