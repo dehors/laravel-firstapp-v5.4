@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/demo', function () {
+    return view('demo');
+});
+
 Route::get('/name',function(){
 	$name = config('app.name');
 	return $name;
